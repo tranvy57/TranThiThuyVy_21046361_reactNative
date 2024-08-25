@@ -1,7 +1,9 @@
 const printForecase = (arr) => {
+	let result = ''
 	arr.forEach((e, index) => {
-		console.log(`${e}*C in ${index + 1} days...`)
+		result += `${e}*C in ${index + 1} days... `
 	})
+	console.log(result)
 }
 
 const data1 = [17, 21, 23]
