@@ -68,7 +68,7 @@ console.log(players1, players2)
 const [gk, ...fieldPlayers] = players1
 console.log(gk, fieldPlayers)
 
-//3
+// //3
 const allPlayers = [...players1, ...players2]
 console.log(allPlayers)
 
