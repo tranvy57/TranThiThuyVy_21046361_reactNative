@@ -39,6 +39,9 @@ const game = {
 	},
 }
 
+// Let's continue with our football betting app! Keep using the 'game' variable from
+// before.
+// Your tasks:
 // 1. Loop over the game.scored array and print each player name to the console,
 // along with the goal number (Example: "Goal 1: Lewandowski")
 // 2. Use a loop to calculate the average odd and log it to the console (We already
@@ -59,17 +62,8 @@ const game = {
 // Lewandowski: 2
 // }
 
-//1
-game.scored.forEach((player, i) => console.log(`Goal ${i + 1}: ${player}`))
+// 1.
 
-//2
-// let average = game.odds.team1 + game.odds.x + game.odds.team2
-// average /= 3
-// console.log(average)
-
-// //3
-// // cách for từng trường trong Object
-// for (const [team, odd] of Object.entries(game.odds)) {
-// 	const teamStr = team === 'x' ? 'draw' : `victory ${game[team]}`
-// 	console.log(`Odd of ${teamStr}: ${odd}`)
-// }
+game.scored.forEach((player, index) => {
+	console.log(`Goal ${index + 1}: ${player}`)
+})
