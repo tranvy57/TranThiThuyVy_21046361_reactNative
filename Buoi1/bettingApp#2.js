@@ -74,3 +74,10 @@ for (const odd of Object.values(game.odds)) {
 	sum += odd
 }
 console.log(`Average odd: ${sum / Object.values(game.odds).length}`)
+
+//3
+
+for (const [team, odd] of Object.entries(game.odds)) {
+	const teamStr = team === 'x' ? 'draw' : `victory ${game[team]}`
+	console.log(`Odd of ${teamStr}: ${odd}`)
+}
