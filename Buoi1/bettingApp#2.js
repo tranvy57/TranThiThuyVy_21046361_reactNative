@@ -81,3 +81,11 @@ for (const [team, odd] of Object.entries(game.odds)) {
 	const teamStr = team === 'x' ? 'draw' : `victory ${game[team]}`
 	console.log(`Odd of ${teamStr}: ${odd}`)
 }
+
+//4
+
+const scorers = {}
+game.scored.forEach((player) => {
+	scorers[player] = (scorers[player] || 0) + 1
+})
+console.log(scorers)
