@@ -67,3 +67,10 @@ const game = {
 game.scored.forEach((player, index) => {
 	console.log(`Goal ${index + 1}: ${player}`)
 })
+
+//2
+let sum = 0
+for (const odd of Object.values(game.odds)) {
+	sum += odd
+}
+console.log(`Average odd: ${sum / Object.values(game.odds).length}`)
