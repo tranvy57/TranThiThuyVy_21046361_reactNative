@@ -4,75 +4,36 @@ import { HelloWave } from '@/components/HelloWave'
 import ParallaxScrollView from '@/components/ParallaxScrollView'
 import { ThemedText } from '@/components/ThemedText'
 import { ThemedView } from '@/components/ThemedView'
+import Man1 from '@/components/man1'
+import Man2 from '@/components/Man2'
+import { LinearGradient } from 'expo-linear-gradient'
 
 export default function HomeScreen() {
-	return (
-		<View style={[styles.container, { backgroundColor: '#00CCF9' }]}>
-			<View style={[styles.row, { flex: 2 }]}>
-				<View style={styles.circle}></View>
-			</View>
-			<View style={[styles.row, { flex: 1 }]}>
-				<Text style={{ fontSize: 30, textAlign: 'center', fontWeight: 'bold' }}>
-					GROW{'\n'}YOUR BUSINESS
-				</Text>
-			</View>
-			<View style={[styles.row, { flex: 1 }]}>
-				<Text style={{ fontSize: 20, textAlign: 'center', fontWeight: 'bold' }}>
-					We will help you to grow your business using online server
-				</Text>
-			</View>
-			<View style={[styles.row, { flex: 1 }, styles.buttongroup]}>
-				<TouchableOpacity
-					style={{
-						width: 100,
-						height: 50,
-						justifyContent: 'center',
-						alignItems: 'center',
-						backgroundColor: '#E3C000',
-					}}
-				>
-					<Text style={{ fontSize: 20, textAlign: 'center', fontWeight: 'bold' }}>LOGIN</Text>
-				</TouchableOpacity>
-
-				<TouchableOpacity
-					style={{
-						width: 100,
-						height: 50,
-						justifyContent: 'center',
-						alignItems: 'center',
-						backgroundColor: '#E3C000',
-					}}
-				>
-					<Text style={{ fontSize: 20, textAlign: 'center', fontWeight: 'bold' }}>SIGN IN</Text>
-				</TouchableOpacity>
-			</View>
-		</View>
-	)
+	return <Man2 />
 }
 
 const styles = StyleSheet.create({
 	container: {
 		flex: 1,
-		justifyContent: 'center',
 		alignItems: 'center',
-		flexDirection: 'column',
-	},
-	circle: {
-		width: 150,
-		height: 150,
-		borderRadius: 100,
 		justifyContent: 'center',
-		alignItems: 'center',
-		borderWidth: 15,
+		backgroundColor: 'orange',
 	},
-	row: {
-		width: '100%',
-		justifyContent: 'center',
-		alignItems: 'center',
+	background: {
+		position: 'absolute',
+		left: 0,
+		right: 0,
+		top: 0,
+		height: 300,
 	},
-	buttongroup: {
-		flexDirection: 'row',
-		justifyContent: 'space-around',
-		width: '100%',
+	button: {
+		padding: 15,
+		alignItems: 'center',
+		borderRadius: 5,
+	},
+	text: {
+		backgroundColor: 'transparent',
+		fontSize: 15,
+		color: '#fff',
 	},
 })
