@@ -4,12 +4,13 @@ import { HelloWave } from '@/components/HelloWave'
 import ParallaxScrollView from '@/components/ParallaxScrollView'
 import { ThemedText } from '@/components/ThemedText'
 import { ThemedView } from '@/components/ThemedView'
-import Man1 from '@/components/man1'
+
 import Man2 from '@/components/Man2'
 import { LinearGradient } from 'expo-linear-gradient'
+import Man3 from '@/components/Man3'
 
 export default function HomeScreen() {
-	return <Man2 />
+	return <Man3 />
 }
 
 const styles = StyleSheet.create({
