@@ -8,9 +8,10 @@ import { ThemedView } from '@/components/ThemedView'
 import Man2 from '@/components/Man2'
 import { LinearGradient } from 'expo-linear-gradient'
 import Man4 from '@/components/Man4'
+import Man5 from '@/components/Man5'
 
 export default function HomeScreen() {
-	return <Man4 />
+	return <Man5 />
 }
 
 const styles = StyleSheet.create({
