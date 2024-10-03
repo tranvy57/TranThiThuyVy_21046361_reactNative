@@ -9,9 +9,10 @@ import Man2 from '@/components/Man2'
 import { LinearGradient } from 'expo-linear-gradient'
 import Man4 from '@/components/Man4'
 import Man5 from '@/components/Man5'
+import Man6 from '@/components/Man6'
 
 export default function HomeScreen() {
-	return <Man5 />
+	return <Man6 />
 }
 
 const styles = StyleSheet.create({
