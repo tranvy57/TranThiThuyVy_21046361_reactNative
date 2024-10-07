@@ -8,10 +8,9 @@ import { useState } from 'react'
 import App1 from './app1_useState'
 import AppUseEffect from './AppUseEffect'
 
-const randomDiceRoll = () => Math.floor(Math.random() * 6) + 1
-
 export default function HomeScreen() {
 	;<View>
+		hhhhh
 		<AppUseEffect />
 	</View>
 }
